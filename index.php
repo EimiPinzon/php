@@ -179,8 +179,9 @@ echo "<br>";*/
 /// Cadenas
 //// strlen nos dice cuantos caracteres tiene una variable y str_replace permite reemplazar caracteres de la variable
 //// strolower pone los caracteres en minuscula y strtoupper pone loa caracteres en mayuscula
+//// substr trae partes de una cadena, se le dan las cordenadas y listo
 
-$cadena = "hola mundo";
+/*$cadena = "hola mundo";
 
 echo strlen ($cadena);
 echo '<br>';
@@ -189,5 +190,47 @@ echo '<br>';
 echo strtolower($cadena);
 echo '<br>';
 echo strtoupper ($cadena);
+echo '<br>';
+echo substr($cadena, 0,4);
+echo '<br>';
+echo substr($cadena, 4,6);*/
+
+//// Funciones
+//// se crea la función y trae cuando se necesite, también se puede llamar con una variable.
+
+/*function fun(){
+    echo "saludos";
+    return;
+}
+echo fun();
+
+function fun(){
+    $var = "saludos";
+    return $var;
+}
+echo fun();*/
+
+//// también se pueden sumar variables
+
+/*function sum($var1, $var2){
+    $suma = $var1 + $var2;
+    return $suma;
+}
+
+echo sum(10,10);
+
+function sum($var1, $var2){
+    $suma = $var1 + $var2;
+    return $suma;
+}
+
+$num1=100;
+$num2=20;
+
+
+echo sum($num1,$num2);*/
+
+
+
 
 ?>
