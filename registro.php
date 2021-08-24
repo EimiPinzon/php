@@ -52,10 +52,6 @@
                             <label for="edad" class="form-label">Edad del alumno</label>
                             <input type="number" class="form-control" name="edad" id="edad" aria-describedby="emailHelp">
                         </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
                         <button type="submit" value="guardar" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
@@ -75,7 +71,8 @@
                             <td><?php echo $fila['nombres'] ?></td>
                             <td><?php echo $fila['apellidos'] ?></td>
                             <td><?php echo $fila['edad'] ?></td>
-                            <td><a href="actualizar.php?id=<?php echo $fila['id'] ?>">Actualizar</a></td>
+                            <td><a href="actualizar.php?id=<?php echo $fila['id'] ?>">ACTUALIZAR</a></td>
+                            <td><a href="borrar.php?id=<?php echo $fila['id'] ?>">Eliminar</a></td>
                         </tr>
                         <?php } ?>
                     </table>
